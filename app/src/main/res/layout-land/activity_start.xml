@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".StartActivity">
+
+    <Button
+        android:id="@+id/equals_bt"
+        android:layout_width="105dp"
+        android:layout_height="0dp"
+        android:text="@string/equals"
+        app:layout_constraintBottom_toBottomOf="@+id/greater_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression2_textview"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/lesser_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:text="@string/lesser"
+        app:layout_constraintEnd_toEndOf="@+id/expression2_textview"
+        app:layout_constraintTop_toBottomOf="@+id/expression2_textview"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/expression2_textview"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="118dp"
+        android:text="@string/expression2_right"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/expression1_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expression1_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/expression1_left"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/greater_bt"
+        app:layout_constraintEnd_toStartOf="@+id/expression2_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_textview" />
+
+    <Button
+        android:id="@+id/greater_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/greater"
+        app:layout_constraintBottom_toTopOf="@+id/answer_textview"
+        app:layout_constraintEnd_toStartOf="@+id/answer_textview"
+        app:layout_constraintStart_toStartOf="@+id/answer_textview"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/answer_textview"
+        android:layout_width="290dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lesser_bt" />
+
+    <TextView
+        android:id="@+id/timer_textview"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/timer"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/expression2_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <Button
+        android:id="@+id/equals_bt"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="280dp"
+        android:text="@string/equals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression1_textview"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/lesser_bt"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="280dp"
+        android:text="@string/lesser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression1_textview"
+        app:layout_constraintVertical_bias="0.512"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/expression2_textview"
+        android:layout_width="183dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/expression2_right"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expression1_textview"
+        android:layout_width="183dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="331dp"
+        android:text="@string/expression1_left"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answer_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greater_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/greater"
+        app:layout_constraintBaseline_toBaselineOf="@+id/equals_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/answer_textview"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="127dp"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expression1_textview" />
+
+    <TextView
+        android:id="@+id/timer_textview"
+        android:layout_width="192dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/timer"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/expression2_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MobileCW</string>
+    <string name="iitStdId">IIT Id: 2019737</string>
+    <string name="uowStdId">UoW Id: w1809926</string>
+    <string name="studentName">Edirimuni Shaleen Eranda Silva Wickramaratne</string>
+    <string name="aboutMessage">I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged.</string>
+    <string name="ok_bt">Ok</string>
+    <string name="equals">==</string>
+    <string name="lesser">Lesser</string>
+    <string name="expression1_left">Left</string>
+    <string name="expression2_right">Right</string>
+    <string name="greater">Greater</string>
+    <string name="answer">Answer</string>
+    <string name="timer">Timer</string>
+    <string name="about_bt">About</string>
+    <string name="newgame_bt">New Game</string>
+    <string name="score_textview">Correct Score</string>
+    <string name="done_bt">Done</string>
+    <string name="incorrect_score">Incorrect Score</string>
+</resources>

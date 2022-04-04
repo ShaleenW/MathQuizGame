@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="268dp"
+        android:layout_margin="1dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iitId"
+                android:layout_width="383dp"
+                android:layout_height="38dp"
+                android:text="@string/iitStdId"
+                android:textAlignment="center"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uowId"
+                android:layout_width="383dp"
+                android:layout_height="40dp"
+                android:text="@string/uowStdId"
+                android:textAlignment="center"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aboutMessage"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:justificationMode="inter_word"
+                android:text="@string/aboutMessage"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_bt"
+            android:textColor="#BDBDBD"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </LinearLayout>
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/about_window"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".About">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/iitId"-->
+<!--        android:layout_width="106dp"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/iitStdId"-->
+<!--        android:textColor="@color/material_dynamic_tertiary20"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/aboutMessage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uowId" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/uowId"-->
+<!--        android:layout_width="125dp"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/uowStdId"-->
+<!--        android:textColor="@color/material_dynamic_tertiary20"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/iitId"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/timer_textview" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/timer_textview"-->
+<!--        android:layout_width="335dp"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="83dp"-->
+<!--        android:layout_marginBottom="7dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/studentName"-->
+<!--        android:textColor="@color/material_dynamic_tertiary20"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/uowId"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/aboutMessage"-->
+<!--        android:layout_width="357dp"-->
+<!--        android:layout_height="312dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/aboutMessage"-->
+<!--        android:textColor="@color/material_dynamic_tertiary20"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/ok_bt"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iitId" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/ok_bt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="44dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:text="@string/ok_bt"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/aboutMessage"-->
+<!--        tools:ignore="TextContrastCheck" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

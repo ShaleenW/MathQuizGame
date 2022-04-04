@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="268dp"
+        android:layout_margin="1dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iitId"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="@string/iitStdId"
+                android:textAlignment="center"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uowId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/uowStdId"
+                android:textAlignment="center"
+                android:textColor="#455A64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aboutMessage"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:justificationMode="inter_word"
+                android:text="@string/aboutMessage"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck"
+                tools:targetApi="o" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_bt"
+            android:textColor="#BDBDBD"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </LinearLayout>
+</LinearLayout>

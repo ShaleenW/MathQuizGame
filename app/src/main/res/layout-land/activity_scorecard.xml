@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/score_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginEnd="115dp"
+        android:text="@string/score_textview"
+        android:textColor="#616161"
+        app:layout_constraintBottom_toBottomOf="@+id/incorrect_score"
+        app:layout_constraintEnd_toStartOf="@+id/incorrect_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/incorrect_score" />
+
+    <Button
+        android:id="@+id/done_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/done_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_textview" />
+
+    <TextView
+        android:id="@+id/incorrect_score"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="180dp"
+        android:text="@string/incorrect_score"
+        android:textColor="#616161"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
