@@ -17,6 +17,7 @@ var correctAnswersCount = 0
 var incorrectAnswersCount = 0
 
 class StartActivity : AppCompatActivity() {
+
     private var operatorsSet = "+-*/"
     var time  = mutableListOf<Long>(50000)
     var timer = mutableListOf<CountDownTimer>()
@@ -61,8 +62,21 @@ class StartActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                val intent = Intent(this@StartActivity,Scorecard::class.java)
-                startActivity(intent)
+//                val intent = Intent(this@StartActivity,Scorecard::class.java)
+//                startActivity(intent)
+                //activity title
+                val actionBar = supportActionBar
+                actionBar!!.title = "Scorecard"
+                actionBar.setDisplayHomeAsUpEnabled(true)
+
+                setContentView(R.layout.activity_scorecard)
+
+                val correctScoreView = findViewById<TextView>(R.id.score_textview)
+                val incorrectScoreView = findViewById<TextView>(R.id.incorrect_score)
+
+                correctScoreView.append(correctAnswersCount.toString())
+                incorrectScoreView.append(incorrectAnswersCount.toString())
+
             }
         }.start()
         return timer
@@ -342,7 +356,7 @@ class StartActivity : AppCompatActivity() {
 
         val restoreData1 : CharSequence = savedInstanceState.getCharSequence("Data restored1").toString()
         val restoreData2 : CharSequence = savedInstanceState.getCharSequence("Data restored2").toString()
-        val restoreData3 : CharSequence = savedInstanceState.getCharSequence("data restored3").toString()
+        val restoreData3 : CharSequence = savedInstanceState.getCharSequence("Data restored3").toString()
 
         time [0] = savedInstanceState.getLong("Countdown")
         timer.add(countDownTimer(timerView,time))
