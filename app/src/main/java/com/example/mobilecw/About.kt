@@ -16,5 +16,10 @@ class About : AppCompatActivity() {
             val intent = Intent(this@About,MainActivity::class.java)
             startActivity(intent)
         })
+
+        //activity title
+        val actionBar = supportActionBar
+        actionBar!!.title = "About"
+        actionBar.setDisplayHomeAsUpEnabled(true)
     }
 }
