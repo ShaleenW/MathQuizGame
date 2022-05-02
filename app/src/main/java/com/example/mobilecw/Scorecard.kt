@@ -7,9 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Scorecard: AppCompatActivity() {
 
-//    private var correctAnswersCount= 10
-//    private var incorrectAnswersCount= 5
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scorecard)
@@ -31,7 +28,10 @@ class Scorecard: AppCompatActivity() {
         super.onSaveInstanceState(outState)
 
         val correctScoreView = findViewById<TextView>(R.id.score_textview)
+        correctScoreView.append(correctAnswersCount.toString())
         val incorrectScoreView = findViewById<TextView>(R.id.incorrect_score)
+        incorrectScoreView.append(incorrectAnswersCount.toString())
+
         val correctScoreText = findViewById<TextView>(R.id.textView2)
         val incorrectScoreText = findViewById<TextView>(R.id.textView3)
 
@@ -51,7 +51,10 @@ class Scorecard: AppCompatActivity() {
         super.onRestoreInstanceState(savedInstanceState)
 
         val correctScoreView = findViewById<TextView>(R.id.score_textview)
-        val incorrectScoreView = findViewById<TextView>(R.id.incorrect_score)
+        correctScoreView.append(correctAnswersCount.toString())
+        val incorrectScoreView = (findViewById<TextView>(R.id.incorrect_score))
+        incorrectScoreView.append(incorrectAnswersCount.toString())
+
         val correctScoreText = findViewById<TextView>(R.id.textView2)
         val incorrectScoreText = findViewById<TextView>(R.id.textView3)
 
